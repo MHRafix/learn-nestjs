@@ -1,0 +1,44 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text color="#373A40" font-size="16px" line-height="32px" />
+      <mj-button background-color="#47B5FF" color="#fff" font-size="16px" padding="16px 32px" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#f0f0f0">
+    <!-- Company Header -->
+    <mj-section>
+      <mj-column width="200px">
+        <mj-image src="https://ewr1.vultrobjects.com/smartseats-brand-assets/logo.png" alt="SmartSeats Logo" align="center" />
+      </mj-column>
+    </mj-section>
+
+    <!-- Introduction Text -->
+    <mj-section background-color="#fff">
+      <mj-column>
+        <mj-text>
+          Hi {{name}} 👋
+        </mj-text>
+        <mj-text>
+          You have been invited to join the SmartSeats team. Please click the link below to accept the invitation.
+        </mj-text>
+
+        <mj-button href="{{url}}" align="center">
+          Join Now
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- Footer -->
+    <mj-section background-color="#e7e7e7">
+      <mj-column>
+        <mj-social>
+          <mj-social-element name="facebook"></mj-social-element>
+          <mj-social-element name="twitter"></mj-social-element>
+          <mj-social-element name="linkedin"></mj-social-element>
+        </mj-social>
+      </mj-column>
+    </mj-section>
+    <!-- Body End -->
+  </mj-body>
+</mjml>
