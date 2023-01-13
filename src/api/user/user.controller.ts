@@ -12,10 +12,9 @@ export class UserController {
   @ApiOperation({ summary: 'User create api' })
   @Post('/create')
   //   @Authenticated()
-  //   @IsUserDomain('ADMIN')
+  // @IsUserRole('ADMIN')
   async create(@Body() payload: CreateUserDto, @Req() req: any) {
-    console.log(payload);
-    const data = await this.userService;
+    const data = await this.userService.create(payload);
     return new AppResponse({
       data,
       message: 'User created successfully',

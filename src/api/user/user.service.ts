@@ -1,16 +1,29 @@
 import { Injectable } from '@nestjs/common';
+import { CreateUserDto } from './dto/CreateUser.dto';
 
 @Injectable()
 export class UserService {
-  // private supabase: SupabaseClient;
+  constructor() {} // private readonly prisma: PrismaService, // private readonly userService: UserService, // private readonly mailService: MailService, // private readonly eventEmitter: EventEmitter2,
 
-  // private readonly configService: ConfigService
-  // private readonly eventEmitter: EventEmitter2,
-  // private otpService: OtpService, // private mail: MailService,
-  constructor() {
-    //   this.supabase = createClient(
-    //     'https://fgtbiltyzrjbnakoipvj.supabase.co',
-    //     'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZndGJpbHR5enJqYm5ha29pcHZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzI3Mjg5NzcsImV4cCI6MTk4ODMwNDk3N30.VDZZEZt3V0wiAT-UkdrZnpautUJcPvrhrE6nxwZAVAM',
-    //   );
+  async create(payload: CreateUserDto) {
+    console.log(payload);
+    // const user = await this.prisma.user.create({
+    //   data: {
+    //     name: payload.name,
+    //     email: payload?.email,
+    //     avatar: payload?.avatar,
+    //     hash: payload?.hash,
+    //     role: payload.role,
+    //     creator: payload.creator,
+    //   },
+    // });
+    return {
+      name: 'payload?.name',
+      email: 'payload?.email',
+      avatar: 'payload?.avatar',
+      hash: 'payload?.hash',
+      role: 'payload?.role',
+      creator: 'payload?.creator',
+    };
   }
 }
